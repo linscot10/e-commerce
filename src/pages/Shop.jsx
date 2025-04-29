@@ -25,6 +25,30 @@ const mockProducts = [
         name: 'Laptop Backpack',
         price: 39.99,
         image: '/public/images/Laptop Backpack.jpg'
+    },
+    {
+        id: 5,
+        name: 'Smartwatch',
+        price: 89.99,
+        image: '/images/smartWatch.jpg'
+    },
+    {
+        id: 6,
+        name: 'Bluetooth Speaker',
+        price: 29.99,
+        image: '/images/BluetoothSpeaker.jpg'
+    },
+    {
+        id: 7,
+        name: 'Laptop Backpack',
+        price: 39.99,
+        image: '/public/images/Laptop Backpack.jpg'
+    },
+    {
+        id: 8,
+        name: 'Wireless Headphones',
+        price: 49.99,
+        image: '/images/headPhones.jpg'
     }
 ]
 
