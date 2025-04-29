@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails'
+import Cart from './pages/Cart'
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/product/:id" element={<ProductDetails />} />
+          </Routes>
+          <Routes>
+            <Route path="/cart" element={<Cart />} />
           </Routes>
 
         </div>

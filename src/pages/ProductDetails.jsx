@@ -1,5 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
+
 
 
 const mockProducts = [
@@ -62,7 +64,9 @@ const mockProducts = [
 ]
 
 
+
 const ProductDetails = () => {
+    const { addToCart } = useCart()
     const { id } = useParams()
     const product = mockProducts.find(p => p.id === parseInt(id))
 
@@ -79,7 +83,7 @@ const ProductDetails = () => {
                 <h2>{product.name}</h2>
                 <p className="text-muted">${product.price.toFixed(2)}</p>
                 <p>{product.description}</p>
-                <button className="btn btn-success">Add to Cart</button>
+                <button className="btn btn-success" onClick={() => addToCart(product)}>Add to Cart</button>
             </div>
         </div>
     )
