@@ -7,6 +7,9 @@ import Home from './pages/Home'
 import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Checkout from './pages/Checkout'
 
 function App() {
 
@@ -26,6 +29,15 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/cart" element={<Cart />} />
+          </Routes>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+          </Routes>
+          <Routes>
+            <Route path="/register" element={<Register />} />
+          </Routes>
+          <Routes>
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
 
         </div>
