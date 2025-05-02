@@ -10,7 +10,7 @@ import LogOut from './LogOut';
 
 
 const Navbar = () => {
-    const { user, logout } = useUser()
+    const { user } = useUser()
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark mt-0">
 
